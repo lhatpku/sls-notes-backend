@@ -1,13 +1,13 @@
-/**
+c/**
  * Route: POST /note
  */
 
 const AWS = require('aws-sdk');
-AWS.config.update({ region: 'us-west-2' });
+AWS.config.update({ region: 'us-east-2' });
 
 const moment = require('moment');
-const uuidv4 = require('uuid/v4');
-const util = require('./util.js');
+const {"v4": uuidv4} = require('uuid');
+const util = require('./util');
 
 const dynamodb = new AWS.DynamoDB.DocumentClient();
 const tableName = process.env.NOTES_TABLE;
