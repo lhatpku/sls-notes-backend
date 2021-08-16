@@ -4,6 +4,7 @@ frameworkVersion: '2'
 
 plugins: 
   - serverless-offline
+  - serverless-domain-manager
 
 custom:
   allowedHeaders: 
